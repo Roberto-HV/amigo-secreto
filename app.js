@@ -21,7 +21,8 @@ function sortearAmigo(){
     }else{
         let nombreGenerado = Math.floor(Math.random()*amigos.length);
         let resultado = amigos[nombreGenerado];
-        asignarTextoElemento('#resultado',`${resultado}`);
+        asignarTextoElemento('#resultado',`El amigo secreto sorteado es: ${resultado}`);
+        asignarTextoElemento('#listaAmigos',"");
     }
     return;
 }
